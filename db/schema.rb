@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150201121037) do
+ActiveRecord::Schema.define(version: 20150201121123) do
 
   create_table "cars", force: :cascade do |t|
     t.string   "name",        limit: 255,   null: false
@@ -61,6 +61,7 @@ ActiveRecord::Schema.define(version: 20150201121037) do
     t.string   "name",       limit: 255, null: false
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
+    t.integer  "type",       limit: 4,   null: false
   end
 
 end

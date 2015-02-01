@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150201121401) do
+ActiveRecord::Schema.define(version: 20150201121553) do
 
   create_table "cars", force: :cascade do |t|
     t.string   "name",        limit: 255,   null: false
@@ -56,6 +56,17 @@ ActiveRecord::Schema.define(version: 20150201121401) do
   end
 
   add_index "configurations", ["car_id"], name: "index_configurations_on_car_id", using: :btree
+
+  create_table "dealer_cars", force: :cascade do |t|
+    t.integer  "count",            limit: 4, null: false
+    t.integer  "dealer_id",        limit: 4, null: false
+    t.integer  "configuration_id", limit: 4, null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+  end
+
+  add_index "dealer_cars", ["configuration_id"], name: "index_dealer_cars_on_configuration_id", using: :btree
+  add_index "dealer_cars", ["dealer_id"], name: "index_dealer_cars_on_dealer_id", using: :btree
 
   create_table "dealers", force: :cascade do |t|
     t.string   "name",       limit: 255, null: false

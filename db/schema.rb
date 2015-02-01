@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150201121553) do
+ActiveRecord::Schema.define(version: 20150201122045) do
 
   create_table "cars", force: :cascade do |t|
     t.string   "name",        limit: 255,   null: false
@@ -97,4 +97,10 @@ ActiveRecord::Schema.define(version: 20150201121553) do
     t.integer  "type",       limit: 4,   null: false
   end
 
+  add_foreign_key "colors", "configurations"
+  add_foreign_key "configurations", "cars"
+  add_foreign_key "dealer_cars", "configurations"
+  add_foreign_key "dealer_cars", "dealers"
+  add_foreign_key "feature_configurations", "configurations"
+  add_foreign_key "feature_configurations", "features"
 end

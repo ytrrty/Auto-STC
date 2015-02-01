@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150201120721) do
+ActiveRecord::Schema.define(version: 20150201120939) do
 
   create_table "cars", force: :cascade do |t|
     t.string   "name",        limit: 255,   null: false
@@ -32,26 +32,27 @@ ActiveRecord::Schema.define(version: 20150201120721) do
   add_index "colors", ["configuration_id"], name: "index_colors_on_configuration_id", using: :btree
 
   create_table "configurations", force: :cascade do |t|
-    t.integer  "car_id",             limit: 4,  null: false
-    t.integer  "price",              limit: 4,  null: false
-    t.integer  "mass",               limit: 4,  null: false
-    t.integer  "width",              limit: 4,  null: false
-    t.integer  "height",             limit: 4,  null: false
-    t.integer  "length",             limit: 4,  null: false
-    t.integer  "wheelbase",          limit: 4,  null: false
-    t.integer  "volume_engine",      limit: 4,  null: false
-    t.integer  "count_p",            limit: 4,  null: false
-    t.float    "speed_100",          limit: 24, null: false
-    t.integer  "max_speed",          limit: 4,  null: false
-    t.float    "consumption_city",   limit: 24, null: false
-    t.float    "consumption_suburb", limit: 24, null: false
-    t.float    "consumption_combo",  limit: 24, null: false
-    t.datetime "created_at",                    null: false
-    t.datetime "updated_at",                    null: false
-    t.integer  "fuel",               limit: 4,  null: false
-    t.integer  "gear",               limit: 4,  null: false
-    t.integer  "body",               limit: 4,  null: false
-    t.integer  "kpp",                limit: 4,  null: false
+    t.integer  "car_id",             limit: 4,   null: false
+    t.integer  "price",              limit: 4,   null: false
+    t.integer  "mass",               limit: 4,   null: false
+    t.integer  "width",              limit: 4,   null: false
+    t.integer  "height",             limit: 4,   null: false
+    t.integer  "length",             limit: 4,   null: false
+    t.integer  "wheelbase",          limit: 4,   null: false
+    t.integer  "volume_engine",      limit: 4,   null: false
+    t.integer  "count_p",            limit: 4,   null: false
+    t.float    "speed_100",          limit: 24,  null: false
+    t.integer  "max_speed",          limit: 4,   null: false
+    t.float    "consumption_city",   limit: 24,  null: false
+    t.float    "consumption_suburb", limit: 24,  null: false
+    t.float    "consumption_combo",  limit: 24,  null: false
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+    t.integer  "fuel",               limit: 4,   null: false
+    t.integer  "gear",               limit: 4,   null: false
+    t.integer  "body",               limit: 4,   null: false
+    t.integer  "kpp",                limit: 4,   null: false
+    t.string   "name",               limit: 255, null: false
   end
 
   add_index "configurations", ["car_id"], name: "index_configurations_on_car_id", using: :btree

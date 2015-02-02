@@ -11,14 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150201122045) do
+ActiveRecord::Schema.define(version: 20150202135243) do
 
   create_table "cars", force: :cascade do |t|
-    t.string   "name",        limit: 255,   null: false
-    t.text     "description", limit: 65535, null: false
-    t.integer  "year",        limit: 4,     null: false
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.string   "name",                    limit: 255,   null: false
+    t.text     "description",             limit: 65535, null: false
+    t.integer  "year",                    limit: 4,     null: false
+    t.datetime "created_at",                            null: false
+    t.datetime "updated_at",                            null: false
+    t.string   "prev_image_file_name",    limit: 255
+    t.string   "prev_image_content_type", limit: 255
+    t.integer  "prev_image_file_size",    limit: 4
+    t.datetime "prev_image_updated_at"
   end
 
   create_table "colors", force: :cascade do |t|

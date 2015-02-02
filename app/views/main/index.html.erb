@@ -5,7 +5,7 @@
     <div class='model_list'>
       <% @cars.each do |car| %>
         <div class="view view-first">
-          <img src="http://media.nissan.eu/content/dam/homepage/default/thumbnails/330x248/Micra_L.png" />
+          <%= image_tag car.prev_image.url %>
           <div class="mask">
             <h2><%= car.name %></h2>
             <p>

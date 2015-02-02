@@ -13,6 +13,9 @@ Rails.application.routes.draw do
   resources :dealer_cars
   resources :feature_configurations
 
+
+  post 'loadImgCar/:id' => 'main#loadImgCar'
+  get 'load/:id' => 'main#load'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

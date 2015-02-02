@@ -1,6 +1,6 @@
 class MainController < ApplicationController
 
   def index
-    @cars = Car.all
+    @cars = Car.order('year DESC').all
   end
 end

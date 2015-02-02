@@ -1,0 +1,26 @@
+
+<div class="middle_row row_gray">
+  <div class="full_container clearfix">
+    <h2>МОДЕЛЬНИЙ РЯД</h2>
+    <div class='model_list'>
+      <% @cars.each do |car| %>
+        <div class="view view-first">
+          <img src="http://media.nissan.eu/content/dam/homepage/default/thumbnails/330x248/Micra_L.png" />
+          <div class="mask">
+            <h2><%= car.name %></h2>
+            <p>
+              <a href="#" class="btn btn_default"><span>Конфігуратор</span></a>
+              <a href="#" class="btn btn_cyan"><span>Замовити ТестДрайв</span></a>
+              <a href="#" class="btn btn_cyan"><span>Ціни та конфігурації</span></a>
+            </p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <br>
+    <a href='javascript:void(0);' onClick='hsModels();' class='btn_more'>ПОКАЗАТИ ВСІ МОДЕЛІ</a>
+  </div>
+
+
+
+</div>

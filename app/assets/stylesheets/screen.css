@@ -1,4 +1,4 @@
-@media only screen and (min-width: 280px) and (max-width: 989px) {	
+@media only screen and (min-width: 280px) and (max-width: 989px) {
 
 	.container {
 		width:300px}
@@ -10,7 +10,6 @@
 		margin:2px 10px 5px 0 !important}
 	img.alignright {
 		margin:2px 0 5px 10px !important}
-
 	/* Columns width's
 	--------------------------------------------------*/
 	.col_1,

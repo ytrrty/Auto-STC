@@ -119,7 +119,7 @@ body {
 
 /* preload images */
 body:before {
-	content: url(select-opacity.png) url(dropdown_bg.png);
+	content: url(../images/select-opacity.png) url(../images/dropdown_bg.png);
 	display:none;}
 
 .body_wrap {
@@ -259,7 +259,7 @@ pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
 	font-size:110%}
 
 .title-arrow {
-	background:url(icons/icon_arrow_gray.png) 0 4px no-repeat;
+	background:url(../images/icons/icon_arrow_gray.png) 0 4px no-repeat;
 	padding-left:15px}
 
 /* Blockquotes
@@ -379,8 +379,8 @@ button[disabled], input[disabled] {cursor: default}
 
 .ie7 .custom-checkbox input {left:2px; top:7px}
 /* states */
-.custom-checkbox label { background:url(styled_checkbox.png) no-repeat; }
-.custom-radio label { background:url(styled_radiobutton.png) no-repeat; }
+.custom-checkbox label { background:url(../images/styled_checkbox.png) no-repeat; }
+.custom-radio label { background:url(../images/styled_radiobutton.png) no-repeat; }
 .custom-checkbox label,.custom-radio label { background-position:-10px -10px; }
 .custom-checkbox label.checked,.custom-radio label.checked { background-position:-10px -206px; color:#3f4b56 }
 .custom-checkbox label.hover,.custom-checkbox label.focus,.custom-radio label.hover,.custom-radio label.focus {}
@@ -393,7 +393,7 @@ button[disabled], input[disabled] {cursor: default}
 	z-index:5;}
 
 .mutli_select_box .custom-checkbox label {
-	background:url(styled_checkbox_dark.png) -10px -10px no-repeat;}
+	background:url(../images/styled_checkbox_dark.png) -10px -10px no-repeat;}
 
 .mutli_select_box .custom-checkbox label.checked {
 	background-position:-10px -206px;}
@@ -404,7 +404,7 @@ button[disabled], input[disabled] {cursor: default}
 	height:16px;
 	line-height:16px;
 	font-size:12px;
-	background:url(selects-1.png) right -1px no-repeat #ecf0f2;
+	background:url(../images/selects-1.png) right -1px no-repeat #ecf0f2;
 	display: inline-block;
 	position: relative;
 	cursor: pointer;
@@ -435,7 +435,7 @@ button[disabled], input[disabled] {cursor: default}
 	top:38px;
 	z-index:6;
 	visibility:hidden;
-	background: url(select-opacity.png);
+	background: url(../images/select-opacity.png);
 	border-radius:3px;
 	-webkit-border-radius:3px;
 	border:1px solid #0a0b0b;
@@ -507,19 +507,19 @@ button[disabled], input[disabled] {cursor: default}
 	position: relative;}
 
 .jspDrag{
-	background: url(select-multi-drag.png) 0 bottom no-repeat;
+	background: url(../images/select-multi-drag.png) 0 bottom no-repeat;
 	position: relative;
 	top: 0;
 	left: 0;
 	cursor: pointer;}
 .jspDragTop {
-	background: url(select-multi-drag.png) 0 top no-repeat;
+	background: url(../images/select-multi-drag.png) 0 top no-repeat;
 	height:10px}
 
 .jspArrow{
 	display: block;
 	cursor: pointer;
-	background: url(selects-1.png) no-repeat;}
+	background: url(../images/selects-1.png) no-repeat;}
 .jspArrow:hover {
 	background-color:#212121;}
 .jspArrowUp {
@@ -545,7 +545,7 @@ button[disabled], input[disabled] {cursor: default}
 /* Preloader
 ===================================*/
 .preloader {
-	background:url(loading.gif) center center no-repeat;
+	background:url(../images/loading.gif) center center no-repeat;
 	display:inline-block}
 
 /* Images
@@ -642,7 +642,7 @@ p.wp-caption-text, .frame_caption {
 	min-width:138px}
 
 .btn:hover {
-	background-image:url(button_hover.png);
+	background-image:url(../images/button_hover.png);
 	background-repeat:repeat-x}
 
 .btn:active {
@@ -694,7 +694,7 @@ p.wp-caption-text, .frame_caption {
 	width:148px;
 	text-align:left;
 	text-indent:40px;
-	background:url(icons/icon_search.png) 95px 11px no-repeat;
+	background:url(../images/icons/icon_search.png) 95px 11px no-repeat;
 	text-shadow:0 1px 1px #9e3915;}
 
 .ie7 .btn_search input,
@@ -709,7 +709,7 @@ p.wp-caption-text, .frame_caption {
 	text-shadow:0 1px 1px #666;}
 
 .btn_rss span {
-	background:url(icons/icon_rss2.png) 150px 11px no-repeat;
+	background:url(../images/icons/icon_rss2.png) 150px 11px no-repeat;
 	text-align:left;}
 
 .btn_rss:active {
@@ -897,10 +897,10 @@ p.wp-caption-text, .frame_caption {
 .divider_thin {
 	margin-bottom:15px;
 	padding-top:15px;
-	background:url(divider_line.png) bottom repeat-x}
+	background:url(../images/divider_line.png) bottom repeat-x}
 
 .divider{
-	background:url(divider_line.png) bottom repeat-x}
+	background:url(../images/divider_line.png) bottom repeat-x}
 
 /*===================================================*/
 /* 2. SITE STRUCTURE */
@@ -912,7 +912,7 @@ p.wp-caption-text, .frame_caption {
 .header_top {
 	width:100%;
 	height:90px;
-	background:url(header_top_bg.png);
+	background:url(../images/header_top_bg.png);
 	position:absolute;
 	top:0;
 	z-index:5}
@@ -981,12 +981,12 @@ p.wp-caption-text, .frame_caption {
 .dropdown .menu-level-0.last {
 	margin:0}
 .dropdown .menu-level-0.last a {
-	background:url(opacity_white_30.png) left repeat-y;
+	background:url(../images/opacity_white_30.png) left repeat-y;
 	padding-left:22px;
 	color:#39b4ed;}
 
 .dropdown .menu-level-0.last a span {
-	background:url(icons/icon_location.png) right 0 no-repeat;
+	background:url(../images/icons/icon_location.png) right 0 no-repeat;
 	padding-right:25px}
 
 .dropdown .menu-level-0.last:hover a {
@@ -1056,7 +1056,7 @@ p.wp-caption-text, .frame_caption {
 	max-width:950px}
 
 .dropdown li.parentHover {
-	background:url(dropdown_sub.png) center bottom no-repeat}
+	background:url(../images/dropdown_sub.png) center bottom no-repeat}
 
 .dropdown li ul li,
 .dropdown .parentHover ul li {
@@ -1066,7 +1066,7 @@ p.wp-caption-text, .frame_caption {
 	margin:0;
 	padding:0;
 	height:auto;
-	background: url(dropdown_bg.png)}
+	background: url(../images/dropdown_bg.png)}
 
 .dropdown li ul.submenu-1 li {
 	line-height:1em}
@@ -1119,14 +1119,14 @@ p.wp-caption-text, .frame_caption {
 	height: auto;
 	line-height:1.3em;
 	padding:8px 15px 10px 15px;
-	background:url(dropdown_line.png) bottom repeat-x}
+	background:url(../images/dropdown_line.png) bottom repeat-x}
 
 .dropdown li ul li ul li a span {
 	min-height: inherit}
 
 .dropdown li ul li.parent a span,
 .dropdown li ul li.parent ul li.parent a span {
-	background:url(dropdown_parent.png) 136px 3px no-repeat}
+	background:url(../images/dropdown_parent.png) 136px 3px no-repeat}
 
 .dropdown li ul li.parent ul li a span {
 	background:none}
@@ -1148,7 +1148,7 @@ p.wp-caption-text, .frame_caption {
 	border-right:1px solid #090a09;
 	background:none;
 	padding-top:0px;
-	background: url(dropdown_bg.png)}
+	background: url(../images/dropdown_bg.png)}
 
 .dropdown .mega-nav ul li.first,
 .dropdown .mega-nav ul li ul li.first {
@@ -1204,7 +1204,7 @@ p.wp-caption-text, .frame_caption {
 	font-size:13px}
 
 .dropdown .mega-nav ul li ul li a span {
-	background:url(dropdown_line.png) top repeat-x !important;
+	background:url(../images/dropdown_line.png) top repeat-x !important;
 	padding:13px 0 1px 0}
 
 .ie7 .dropdown ul li {
@@ -1331,7 +1331,7 @@ p.wp-caption-text, .frame_caption {
 	background-size:100% auto}
 
 .header_title {
-	background: url(opacity_header_white.png);
+	background: url(../images/opacity_header_white.png);
 	height:126px;}
 
 .header_title h1,
@@ -1358,7 +1358,12 @@ p.wp-caption-text, .frame_caption {
 #header_map {
 	position:relative;
 	width:100%;
-	height:525px;}
+	height:725px;}
+
+#small_map {
+	position:relative;
+	width:100%;
+	height:725px;}
 
 .header_map img, .content .map img, .map img  {
 	max-width:none !important}
@@ -1378,7 +1383,7 @@ p.wp-caption-text, .frame_caption {
 .fullwidthbanner-container img { max-width: inherit !important;}
 
 .tp-bullets.simplebullets.round .bullet {
-	background:url(slider_pagination.png) no-repeat top left !important;
+	background:url(../images/slider_pagination.png) no-repeat top left !important;
 	width:10px !important;
 	height:10px !important;
 	margin-top:-5px !important;
@@ -1420,7 +1425,7 @@ p.wp-caption-text, .frame_caption {
 	margin:0 4px;
 	overflow:hidden;
 	text-indent:-100px;
-	background:url(slider_pagination.png) 0 0 no-repeat}
+	background:url(../images/slider_pagination.png) 0 0 no-repeat}
 
 .slider_pag a.selected {
 	background-position:0 -10px}
@@ -1431,7 +1436,7 @@ p.wp-caption-text, .frame_caption {
 	position:relative;}
 
 .featured_caption {
-	background:url(opacity_white_15.png) top repeat-x;
+	background:url(../images/opacity_white_15.png) top repeat-x;
 	position:absolute;
 	top:190px}
 
@@ -1448,11 +1453,11 @@ p.wp-caption-text, .frame_caption {
 
 .caption_dark .featured_caption,
 .caption_dark .featured_caption p {
-	background-image:url(opacity_black_15.png)}
+	background-image:url(../images/opacity_black_15.png)}
 
 .featured_caption p {
 	display:block;
-	background:url(opacity_white_15.png) bottom repeat-x;
+	background:url(../images/opacity_white_15.png) bottom repeat-x;
 	font-style:italic;
 	font-size:16px;
 	padding:30px 20px;
@@ -1509,7 +1514,7 @@ p.wp-caption-text, .frame_caption {
 	font-size:23px;
 	text-shadow:0 2px 1px #000;
 	text-transform:uppercase;
-	background:url(opacity_white_15.png) bottom repeat-x;
+	background:url(../images/opacity_white_15.png) bottom repeat-x;
 	padding:0 0 17px 0;
 	margin:0 0 10px 0}
 
@@ -1529,7 +1534,7 @@ p.wp-caption-text, .frame_caption {
 
 .info_price {
 	position:relative;
-	background:url(opacity_white_15.png) top repeat-x;
+	background:url(../images/opacity_white_15.png) top repeat-x;
 	padding:17px 0 0 0;
 	margin:10px 0 0 0;
 	font-size:16px;
@@ -1548,7 +1553,7 @@ p.wp-caption-text, .frame_caption {
 	top:17px;
 	width:25px;
 	height:26px;
-	background:url(icons/icon_save.png) no-repeat;
+	background:url(../images/icons/icon_save.png) no-repeat;
 	overflow:hidden;
 	text-indent:-300px;}
 
@@ -1678,11 +1683,11 @@ p.wp-caption-text, .frame_caption {
 	line-height:22px;}
 
 .footer_contacts .phone {
-	background: url(icons/footer_phone.png) 0 -1px no-repeat;
+	background: url(../images/icons/footer_phone.png) 0 -1px no-repeat;
 	padding-left:26px;
 	margin-right:50px;}
 .footer_contacts .email {
-	background: url(icons/footer_email.png) 0 -1px no-repeat;
+	background: url(../images/icons/footer_email.png) 0 -1px no-repeat;
 	padding-left:26px;}
 
 .copyright {
@@ -1717,7 +1722,7 @@ p.wp-caption-text, .frame_caption {
 	width:34px;
 	height:34px;
 	overflow:hidden;
-	background:url(icons/footer_social.png) 0 0 no-repeat;
+	background:url(../images/icons/footer_social.png) 0 0 no-repeat;
 	margin:0 1px}
 
 .footer_social a span {
@@ -1843,7 +1848,7 @@ p.wp-caption-text, .frame_caption {
 	padding:0}
 
 .toggle .ico {
-	background:url(icons/toggle_icons.png) -18px 0 no-repeat;
+	background:url(../images/icons/toggle_icons.png) -18px 0 no-repeat;
 	width:11px;
 	height:11px;
 	font-size:10px;
@@ -1858,13 +1863,13 @@ p.wp-caption-text, .frame_caption {
 	right:10px}
 
 .toggle.active .ico {
-	background:url(icons/toggle_icons.png) -18px -19px no-repeat}
+	background:url(../images/icons/toggle_icons.png) -18px -19px no-repeat}
 
 .toggle.box .ico {
-	background:url(icons/toggle_icons.png) 0 0 no-repeat}
+	background:url(../images/icons/toggle_icons.png) 0 0 no-repeat}
 
 .toggle.box.active .ico {
-	background:url(icons/toggle_icons.png) 0 -19px no-repeat}
+	background:url(../images/icons/toggle_icons.png) 0 -19px no-repeat}
 
 .toggle_content {
 	line-height:1.6em;
@@ -2170,10 +2175,10 @@ h3.toggle.box {
 	padding:0 0 0 30px}
 
 .entry .list_check li {
-	background:url(icons/icon_check2.png) 0 1px no-repeat}
+	background:url(../images/icons/icon_check2.png) 0 1px no-repeat}
 
 .entry .list_delete li {
-	background:url(icons/icon_x2.png) 0 1px no-repeat}
+	background:url(../images/icons/icon_x2.png) 0 1px no-repeat}
 
 .entry .list_dots li,
 .entry .list_square li {
@@ -2277,17 +2282,17 @@ h3.toggle.box {
 	display:inline-block;
 	width:16px;
 	height:16px;
-	background:url(slider_pagination.png) center 0 no-repeat;
+	background:url(../images/slider_pagination.png) center 0 no-repeat;
 	overflow:hidden;
 	text-indent:-300px;
 	margin:0 3px}
 
 .entry .slider_pagination a:hover,
 .entry .slider_pagination a.selected {
-	background:url(slider_pagination3.png) center -16px no-repeat}
+	background:url(../images/slider_pagination3.png) center -16px no-repeat}
 
 .entry .slider_pagination a {
-	background:url(slider_pagination3.png) 0 0 no-repeat}
+	background:url(../images/slider_pagination3.png) 0 0 no-repeat}
 
 .ie7 .slider_pagination a {
 	display:block;
@@ -2298,7 +2303,7 @@ h3.toggle.box {
 
 .slider_quotes .prev,
 .slider_quotes .next {
-	background:url(arrows_slide.png) 0 0 no-repeat;
+	background:url(../images/arrows_slide.png) 0 0 no-repeat;
 	display:block;
 	width:9px;
 	height:11px;
@@ -2309,7 +2314,7 @@ h3.toggle.box {
 	position:relative;
 	bottom:-10px}
 .slider_quotes .prev {
-	background:url(arrows_slide.png) 0 -11px no-repeat}
+	background:url(../images/arrows_slide.png) 0 -11px no-repeat}
 .slider_quotes .prev:hover {
 	background-position:-9px -11px}
 .slider_quotes .next:hover {
@@ -2321,7 +2326,7 @@ h3.toggle.box {
 	font-size:16px;
 	font-style:italic;
 	font-weight:normal;
-	background:url(icons/icon_quotes2.png) 0 0 no-repeat;
+	background:url(../images/icons/icon_quotes2.png) 0 0 no-repeat;
 	padding:5px 30px 0 30px;
 	line-height:1.5em}
 
@@ -2358,7 +2363,7 @@ h3.toggle.box {
 
 .sidebar .quote-text {
 	color:#009551;
-	background:url(icons/icon_quotes.png) 0 2px no-repeat;
+	background:url(../images/icons/icon_quotes.png) 0 2px no-repeat;
 	padding:0 0 0 30px;
 	font-size:14px}
 
@@ -2372,7 +2377,7 @@ h3.toggle.box {
 /*-----------------------------------*/
 .testimonials .container {
 	width:840px;
-	background:url(icons/icon_quotes.png) center 50px no-repeat;
+	background:url(../images/icons/icon_quotes.png) center 50px no-repeat;
 	padding-top:115px;
 	padding-bottom:65px}
 
@@ -2406,7 +2411,7 @@ h3.toggle.box {
 
 .testimonials .prev, .testimonials .next {
 	display:block;
-	background:url(arrows_gray.png) no-repeat;
+	background:url(../images/arrows_gray.png) no-repeat;
 	width:20px;
 	height:34px;
 	position:absolute;
@@ -2748,6 +2753,9 @@ h3.toggle.box {
 	width:170px;
 	min-height:70px}
 
+.search_row .row_full {
+	width:350px;}
+
 .search_row .rowSubmit {
 	width:150px;
 	position:absolute;
@@ -3034,7 +3042,7 @@ h3.toggle.box {
 	display:block;
 	width:24px;
 	height:15px;
-	background:url(vertical_arrows.png) 0 0 no-repeat;
+	background:url(../images/vertical_arrows.png) 0 0 no-repeat;
 	position:absolute;
 	right:65px;}
 
@@ -3139,23 +3147,6 @@ h3.toggle.box {
 	font-weight:bold;
 	text-transform:uppercase;}
 
-.car_types_list li.cart_type_1 .front {	background-image:url(icons/car_types_1_1.png)}
-.car_types_list li.cart_type_1 .back {	background-image:url(icons/car_types_1_2.png)}
-.car_types_list li.cart_type_2 .front {	background-image:url(icons/car_types_2_1.png)}
-.car_types_list li.cart_type_2 .back {	background-image:url(icons/car_types_2_2.png)}
-.car_types_list li.cart_type_3 .front {	background-image:url(icons/car_types_3_1.png)}
-.car_types_list li.cart_type_3 .back {	background-image:url(icons/car_types_3_2.png)}
-.car_types_list li.cart_type_4 .front {	background-image:url(icons/car_types_4_1.png)}
-.car_types_list li.cart_type_4 .back {	background-image:url(icons/car_types_4_2.png)}
-.car_types_list li.cart_type_5 .front {	background-image:url(icons/car_types_5_1.png)}
-.car_types_list li.cart_type_5 .back {	background-image:url(icons/car_types_5_2.png)}
-.car_types_list li.cart_type_6 .front {	background-image:url(icons/car_types_6_1.png)}
-.car_types_list li.cart_type_6 .back {	background-image:url(icons/car_types_6_2.png)}
-.car_types_list li.cart_type_7 .front {	background-image:url(icons/car_types_7_1.png)}
-.car_types_list li.cart_type_7 .back {	background-image:url(icons/car_types_7_2.png)}
-.car_types_list li.cart_type_8 .front {	background-image:url(icons/car_types_8_1.png)}
-.car_types_list li.cart_type_8 .back {	background-image:url(icons/car_types_8_2.png)}
-
 .car_types_list .link_more {
 	color:#f1541e;
 	clear:both}
@@ -3214,7 +3205,7 @@ h3.toggle.box {
 	position:absolute;
 	top:80px;
 	left:0;
-	background:url(arrow_latests.png) -10px 0 no-repeat;
+	background:url(../images/arrow_latests.png) -10px 0 no-repeat;
 	width:80px;
 	height:163px;
 	text-align:center;}
@@ -3376,12 +3367,12 @@ h3.toggle.box {
 	position:absolute;
 	top:4px;
 	right:0;
-	background:url(icons/icon_search_blue.png) 0 3px no-repeat;
+	background:url(../images/icons/icon_search_blue.png) 0 3px no-repeat;
 	padding-left:18px;
 	line-height:15px;}
 
 .breadcrumbs .link_back {
-	background:url(arrow_back.png) 0 4px no-repeat;
+	background:url(../images/arrow_back.png) 0 4px no-repeat;
 	padding-left:13px}
 
 /* minigallery_carousel */
@@ -3422,7 +3413,7 @@ h3.toggle.box {
 	text-indent:-300px;
 	position:absolute;
 	top:20px;
-	background:url(prev_next_arrows.png) 2px center no-repeat}
+	background:url(../images/prev_next_arrows.png) 2px center no-repeat}
 
 .minigallery_carousel .prev {
 	left:7px}
@@ -3470,7 +3461,7 @@ h3.toggle.box {
 	float:left;
 	height:31px;
 	width:30px;
-	background: url(selects-1.png) -15px -78px no-repeat;
+	background: url(../images/selects-1.png) -15px -78px no-repeat;
 	overflow:hidden;
 	text-indent:-500px;
 	border:none;
@@ -3491,7 +3482,7 @@ h3.toggle.box {
 	color:#838a90;
 	font-size:13px;
 	font-style:italic;
-	background:url(icons/icon_rss.png) 0 0 no-repeat;
+	background:url(../images/icons/icon_rss.png) 0 0 no-repeat;
 	padding-left:22px}
 
 .link-news-rss span {
@@ -3520,7 +3511,7 @@ h3.toggle.box {
 .sidebar .widget-container {
 	padding:30px 25px;
 	font-size:13px;
-	background:url(sidebar_line.png) top repeat-x}
+	background:url(../images/sidebar_line.png) top repeat-x}
 
 .sidebar .widget-container.first {
 	background:none}
@@ -3627,11 +3618,11 @@ h3.toggle.box {
 .widget_meta li,
 .widget_pages li {
 	line-height:20px;
-	background:url(styled_radiobutton.png) -10px -12px no-repeat;
+	background:url(../images/styled_radiobutton.png) -10px -12px no-repeat;
 	padding-left:25px}
 
 .widget_popular li {
-	background:url(icons/icon_comment.png) 0 2px no-repeat;
+	background:url(../images/icons/icon_comment.png) 0 2px no-repeat;
 	padding-left:25px}
 
 .widget_nav_menu .current-menu-item,
@@ -3791,7 +3782,7 @@ h3.toggle.box {
 .widget_calendar table caption {
 	line-height:18px;
 	text-align:left;
-	background:url(icons/icons_16_date.png) 0 1px no-repeat}
+	background:url(../images/icons/icons_16_date.png) 0 1px no-repeat}
 
 .widget_calendar.boxed table {
 	background:#fff}
@@ -3829,7 +3820,7 @@ h3.toggle.box {
 	border:1px solid #d5d5d5;
 	border-radius:3px;
 	-webkit-border-radius:3px;
-	background:url(icons/icon_search.png) center center no-repeat;
+	background:url(../images/icons/icon_search.png) center center no-repeat;
 	background-color:#f25720;
 	border-color:#d16546 #ca4e2a #ca5d3d #ca4e2a;
 	overflow:hidden;
@@ -3921,7 +3912,7 @@ h3.toggle.box {
 	padding:0}
 
 .twitter li {
-	background:url(icons/icon_twitter.png) 0 0 no-repeat;
+	background:url(../images/icons/icon_twitter.png) 0 0 no-repeat;
 	padding-left:30px;
 	list-style:none !important;
 	margin-bottom:14px !important;
@@ -4368,7 +4359,7 @@ h3.toggle.box {
 	margin-left:4px;
 	overflow:hidden;
 	float:left;
-	background:url(icons/post_share.png) no-repeat;
+	background:url(../images/icons/post_share.png) no-repeat;
 	text-indent:-400px;}
 
 .post-share .share_google {
@@ -4496,7 +4487,7 @@ h3.toggle.box {
 .tf_pagination .page_next span,
 .btn_save span {
 	display:block;
-	background:url(selects-1.png) 0 -80px no-repeat;
+	background:url(../images/selects-1.png) 0 -80px no-repeat;
 	width:22px;
 	height:30px;}
 
@@ -4921,7 +4912,7 @@ input.btn-submit,
 
 .pages_jump .btn-arrow {
 	border:none;
-	background:url(selects-1.png) -21px -80px no-repeat #fff;
+	background:url(../images/selects-1.png) -21px -80px no-repeat #fff;
 	width:22px;
 	height:32px;
 	overflow:hidden;
@@ -4946,7 +4937,7 @@ input.btn-submit,
 	height:30px;
 	overflow:hidden;
 	text-indent:5000px;
-	background:url(selects-1.png) 0px -80px no-repeat #fff;
+	background:url(../images/selects-1.png) 0px -80px no-repeat #fff;
 	float:left;
 	border:1px solid #cfd8de;}
 
@@ -5054,7 +5045,7 @@ input.btn-submit,
 
 .offer_list .offer_miliage,
 .offer_list .offer_regist {
-	background:url(icons/offer_icons.png) 0 -48px no-repeat;
+	background:url(../images/icons/offer_icons.png) 0 -48px no-repeat;
 	padding-left:19px;
 	font-weight:500;}
 
@@ -5083,7 +5074,7 @@ input.btn-submit,
 	-webkit-border-radius:3px;
 	border:1px solid #cacfd2;
 	padding:0 32px 0 10px;
-	background:url(btn_arrow.png) right 0 #fff no-repeat;
+	background:url(../images/btn_arrow.png) right 0 #fff no-repeat;
 	-webkit-box-shadow:inset 0 1px 1px 0 rgba(255,255,255,0.5), 0px 1px 1px 0px rgba(0,0,0,0.15);
 	box-shadow:inset 0 1px 1px 0 rgba(255,255,255,0.5), 0px 1px 1px 0px rgba(0,0,0,0.15);}
 
@@ -5096,7 +5087,7 @@ input.btn-submit,
 .btn_send:hover,
 .btn_save:hover {
 	color:#fff !important;
-	background:url(btn_arrow.png) right -32px #f25821 no-repeat;
+	background:url(../images/btn_arrow.png) right -32px #f25821 no-repeat;
 	border:1px solid #b44d2b;
 	border-left:1px solid #df5325;
 	border-bottom:1px solid #d75127;
@@ -5138,7 +5129,7 @@ input.btn-submit,
 
 .gallery_image_item a span {
 	display:block;
-	background:url(opacity_black_75.png);
+	background:url(../images/opacity_black_75.png);
 	width:450px;
 	height:20px;
 	line-height:20px;
@@ -5152,7 +5143,7 @@ input.btn-submit,
 	display:block;
 	width:16px;
 	height:16px;
-	background:url(icons/icon_enlarge.png) no-repeat;
+	background:url(../images/icons/icon_enlarge.png) no-repeat;
 	opacity:0.7;
 	filter:alpha(opacity=70);
 	position:absolute;
@@ -5193,7 +5184,7 @@ input.btn-submit,
 	position:absolute;
 	top:12px;
 	z-index:2;
-	background:url(arrows_gallery.png) 0 center no-repeat;
+	background:url(../images/arrows_gallery.png) 0 center no-repeat;
 	border:none}
 
 .gallery_thumbs .prev {
@@ -5305,7 +5296,7 @@ input.btn-submit,
 	-webkit-border-radius:3px 0 0 0}
 
 .details_tabs .tabs li {
-	background:url(tabs_line.gif) right repeat-y;
+	background:url(../images/tabs_line.gif) right repeat-y;
 	padding-right:2px}
 
 .details_tabs .tabs li a {
@@ -5344,7 +5335,7 @@ input.btn-submit,
 	color:#7a8188}
 
 .details_tabs .tabcontent li {
-	background:url(icons/icon_check.png) 0 5px no-repeat;
+	background:url(../images/icons/icon_check.png) 0 5px no-repeat;
 	padding-left:20px;
 	margin-bottom:8px;
 	line-height:1.3em;}
@@ -5453,7 +5444,7 @@ input.btn-submit,
 .side_form .row {
 	padding:14px 25px 12px 25px;
 	position:relative;
-	background:url(row_bg.gif) 0 top repeat-x;}
+	background:url(../images/row_bg.gif) 0 top repeat-x;}
 
 .side_form .rangeField .range-slider {
 	margin:20px 0 35px 5px}
@@ -5563,7 +5554,7 @@ input.btn-submit,
 	margin-left:100px}
 
 .adv_left .slider_pag a {
-	background-image: url(slider_pagination2.png)}
+	background-image: url(../images/slider_pagination2.png)}
 
 /*-----------------------------------*/
 /* non-semantic helper classes */

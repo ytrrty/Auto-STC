@@ -4,11 +4,12 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'main#index'
+  post 'main/index'
 
   resources :cars
   resources :configurations
   resources :colors
-  resources :dealers
+  resources :dealersl
   resources :features
   resources :dealer_cars
   resources :feature_configurations

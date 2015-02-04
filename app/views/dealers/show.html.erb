@@ -1,0 +1,80 @@
+<div class='header header_map'>
+
+  <div style="width: 100%;position: relative;">
+    <div class="dealer_contact">
+
+
+      <div class="sb sb_orange">
+        <div class="box_content">
+            <h3>Звязатися з дилером</h3>
+            <div class='row'>
+              <div class='col col 1_2'>
+                <label class="label_title">Ім’я:</label><br>
+                <input type="text" name="name" id="name" value="" class="inputField required">
+              </div>
+
+              <div class='col col 1_2'>
+                <label class="label_title">Email:</label><br>
+                <input type="text" name="email" id="email" value="" class="inputField required">
+              </div>
+            </div>
+
+            <div class='row'>
+              <div class='col col 1_2'>
+                <label class="label_title">Тема:</label><br>
+                <select class="select_styled" name="subject" id="subject">
+                  <option value="val">Подяка</option>
+                  <option value="val">Пропозиція</option>
+                  <option value="val">Питання</option>
+                  <option value="val">Скарга</option>
+                </select>
+              </div>
+
+              <div class='col col 1_2 full'>
+                <label class="label_title">Телефон:</label><br>
+                <input type="text" name="phone" id="phone" value="" class="inputField">
+              </div>
+            </div>
+
+            <div class='row'>
+              <div class='col col_1'>
+                <label class="label_title">Повідомлення:</label><br>
+                <textarea rows="10" name="message" id="message" class="textareaField required"></textarea>
+              </div>
+            </div>
+            <div class='row'>
+              <input type="submit" value="Відправити" id="send" class="btn btn-submit">
+            </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id='header_map'></div>
+  <div>
+
+
+  <script>
+    $(window).ready(function ()
+    {
+      $('#header_map').gMap(
+      {
+        markers: [
+          {
+            latitude: <%= @dealer.map_x %>,
+            longitude: <%= @dealer.map_y %>,
+            title: '<%= @dealer.name %>',
+            html:"<strong><%= @dealer.name %></strong><br><%= @dealer.address %><br>Телефон: <%= @dealer.phone %><br>Почта: <%= @dealer.mail %>",
+            popup: false,
+            icon: { image: 'http://billfoxusedcars.com/images/icons/gmap_icon.png',iconsize: [74, 88],iconanchor: [37,88],infowindowanchor: [0, 0] }
+          }
+        ],
+        zoom: 14,
+        scrollwheel: false,
+        latitude: <%= @dealer.map_x %>,
+        longitude: <%= @dealer.map_y + 0.030 %>,
+      });
+    });
+  </script>
+</div>

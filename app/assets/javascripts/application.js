@@ -11,8 +11,6 @@
 // about supported directives.
 //
 
-//= require turbolinks
-
 //= require libs/modernizr.min
 //= require libs/respond.min
 //= require libs/jquery.min

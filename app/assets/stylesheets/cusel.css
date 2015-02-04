@@ -5,7 +5,7 @@
 .jScrollPaneDrag,
 .jScrollArrowUp,
 .jScrollArrowDown {
-	background: url(selects-1.png) no-repeat;
+	background: url(../images/selects-1.png) no-repeat;
 }
 .cusel {
 	height:16px;
@@ -121,7 +121,7 @@
 	position: relative;
 	overflow: hidden;
 	z-index: 5;
-	background: url(select-opacity.png);
+	background: url(../images/select-opacity.png);
 	border-radius:3px;
 	-webkit-border-radius:3px;
 	border:1px solid #0a0b0b;

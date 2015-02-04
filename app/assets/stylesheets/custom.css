@@ -151,3 +151,36 @@
   -webkit-transition:all 1s;
   -o-transition:all 1s;
 }
+
+.dealer_contact {
+  position: absolute;
+  z-index: 100;
+  margin-top: 50px;
+  width: 490px;
+  right: 50px;
+  float: right;
+  opacity: 0.5;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+}
+
+.dealer_contact:hover {
+  opacity: 1.0;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+}
+
+.dealer_contact .select_styled{
+  width:187px;
+}
+
+.dealer_contact .col_1 {
+  float: left;
+  width: 475px;
+}
+
+.dealer_contact .row {
+  padding-top: 10px;
+}

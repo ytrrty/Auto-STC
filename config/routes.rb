@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'main#index'
+  post 'main/index'
 
   resources :cars
   resources :configurations
@@ -13,9 +14,10 @@ Rails.application.routes.draw do
   resources :dealer_cars
   resources :feature_configurations
 
-
+  post 'dealers/:id' => 'dealers#mail'
   post 'loadImgCar/:id' => 'main#loadImgCar'
   get 'load/:id' => 'main#load'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

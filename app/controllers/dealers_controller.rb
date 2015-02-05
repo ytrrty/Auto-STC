@@ -1,6 +1,6 @@
 class DealersController < ApplicationController
 
-  before_action :set_dealer, only: [:show]
+  before_action :set_dealer, only: [:show, :mail]
 
   def index
     @dealers = Dealer.all
@@ -8,6 +8,16 @@ class DealersController < ApplicationController
 
   def show
 
+  end
+
+  def mail
+
+    if DealersMailer.contact_mail(@dealer, params.require(:mail)).deliver_now
+      @message = "Ваше повідомлення успішно відправлено"
+    else
+      @message = "Помилка"
+    end
+    render :show
   end
 
   private

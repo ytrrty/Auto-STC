@@ -1,0 +1,40 @@
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body style='background: none repeat scroll 0% 0% #2D2D2D;font-family: "Cabin",sans-serif;font-size: 14px;line-height: 1.1em;color: #3F4B56;font-weight: 500;'>
+  <center style='padding:50px;'>
+    <img src='http://auto-stc.tk/images/logo.png'>
+    <br><br>
+    <div style='background: none repeat scroll 0% 0% #E2E6E9;border-width: 1px;border-style: solid;border-color: #D5DCE1 #D5DCE1 #FCFDFD; padding: 30px 25px; width: 500px;'>
+      <div style='font-size: 22px;  padding: 0px;  margin: 0px 0px 20px;text-transform: uppercase;text-shadow: 0px 1px 1px #FFF;'>
+        Нове повідомлення з сайту Auto-STC
+      </div>
+      <div style='text-align: left;'>
+        <b>Дані автора</b>
+        <p>
+          І’мя: <%= @message[:name] %><br>
+          Телефон: <%= @message[:phone] %><br>
+          E-Mail: <%= @message[:email] %><br>
+        </p>
+        <b>Повідомлення</b>
+        <p>
+          Тип повідомлення: <%= @message[:type] %><br>
+          Вміст повідомлення:<br>
+          <%= @message[:message] %>
+        </p>
+      </div>
+    </div>
+    <div style='background: none repeat scroll 0% 0% rgb(162, 162, 162);border-width: 1px;border-style: solid;border-color: rgb(198, 198, 198) rgb(113, 113, 113) rgb(65, 65, 65);width: 500px;padding: 30px 25px;height: 14px;'>
+      <div style='float:left;'>
+        <span style='background: url("http://auto-stc.tk/images/icons/footer_phone.png") no-repeat scroll 0px -1px transparent;padding-left: 26px; margin-right: 30px;'>0 800 000 000</span>
+        <span style='background: url("http://auto-stc.tk/images/icons/footer_email.png") no-repeat scroll 0px -1px transparent;
+        padding-left: 26px;'>support@auto-stc.com</span>
+      </div>
+      <div style='float:right;'>
+        © 2015 AutoSTC
+      </div>
+    </div>
+  </center>
+</body>
+</html>

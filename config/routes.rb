@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   resources :cars
   resources :configurations
   resources :colors
-  resources :dealersl
+  resources :dealers
   resources :features
   resources :dealer_cars
   resources :feature_configurations

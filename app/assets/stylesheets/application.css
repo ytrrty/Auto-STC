@@ -15,5 +15,6 @@
  *= require custom
  *= require cusel
  *= require settings
+ *= require prettyPhoto
  *= require_self
  */

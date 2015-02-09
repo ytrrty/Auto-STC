@@ -19,9 +19,14 @@
 //= require general
 //= require hoverIntent
 
+//= require jquery.tools.min
+
 //= require jquery.carouFredSel.min
 //= require jquery.touchSwipe.min
 //= require cusel-min
+
+//= require jquery.customInput
+//= require jquery.prettyPhoto
 
 //= require jquery.themepunch.plugins.min
 //= require jquery.themepunch.revolution.min

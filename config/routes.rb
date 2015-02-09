@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   post 'dealers/:id' => 'dealers#mail'
   post 'loadImgCar/:id' => 'main#loadImgCar'
   get 'load/:id' => 'main#load'
+  get 'car/:name/:id' => 'cars#show'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

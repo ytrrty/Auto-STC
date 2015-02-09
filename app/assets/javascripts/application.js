@@ -27,3 +27,5 @@
 //= require jquery.themepunch.revolution.min
 
 //= require custom
+
+//= require dealers

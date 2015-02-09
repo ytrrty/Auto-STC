@@ -2,9 +2,23 @@
     <div class="dealer_contact">
       <div class="sb sb_orange">
         <div class="box_content">
-        <%= form_tag({controller: "dealers", action: "mail"}, method: "post") do |f| %>
+        <%= form_tag({controller: "dealers", action: "mail"}, method: "post", remote: true, authenticity_token: true) do |f| %>
             <h3>Звязатися з дилером</h3>
-            <%= @message %>
+            <% if flash[:notice] %>
+              <div class="alert-message success">
+                <div class="box-icon"></div>
+                <p><%= flash[:notice] %>
+                <a href="" class="close">&times;</a>
+              </div>
+            <% end %>
+            <% if flash[:error] %>
+            <div class="alert-message error">
+              <div class="box-icon"></div>
+              <p><%= flash[:error] %>
+                <a href="" class="close">&times;</a>
+              </div>
+              <% end %>
+            <div id='result'></div>
             <div class='row'>
               <div class='col col 1_2'>
                 <label class="label_title">Ім’я:</label><br>

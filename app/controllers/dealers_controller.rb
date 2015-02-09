@@ -11,11 +11,10 @@ class DealersController < ApplicationController
   end
 
   def mail
-
     if DealersMailer.contact_mail(@dealer, params.require(:mail)).deliver_now
-      @message = "Ваше повідомлення успішно відправлено"
+      flash.now[:notice] = 'Ваше повідомлення успішно відправлено'
     else
-      @message = "Помилка"
+      flash.now[:error] = 'Помилка'
     end
     render :show
   end

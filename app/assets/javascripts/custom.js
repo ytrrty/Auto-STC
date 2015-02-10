@@ -21,3 +21,13 @@ $(function(){
     });
   });
 });
+
+function getErrorMessageBox( message )
+{
+  return '<div class="alert-message error"><div class="box-icon"></div><p>'+message+'<a href="" class="close">&times;</a></div>';
+}
+
+function getSuccessMessageBox( message )
+{
+  return '<div class="alert-message success"><div class="box-icon"></div><p>'+message+'<a href="" class="close">&times;</a></div>';
+}

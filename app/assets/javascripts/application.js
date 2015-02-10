@@ -14,6 +14,7 @@
 //= require libs/modernizr.min
 //= require libs/respond.min
 //= require libs/jquery.min
+//= require jquery_ujs
 
 //= require jquery.easing.min
 //= require general

@@ -4,6 +4,7 @@ class DealersMailer < ApplicationMailer
   def contact_mail( dealer, message )
     @dealer = dealer
     @message = message
+
     mail(to: @dealer.mail, subject: 'Нове повідомлення з сайту')
   end
 end

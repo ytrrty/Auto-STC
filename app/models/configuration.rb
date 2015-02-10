@@ -1,6 +1,8 @@
 class Configuration < ActiveRecord::Base
   has_many :colors, dependent: :delete_all
+  
   has_many :dealer_cars, dependent: :delete_all
+  has_many :dealers, through: :dealer_cars
 
   has_many :feature_configurations
   has_many :features, through: :feature_configurations

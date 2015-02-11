@@ -11,12 +11,15 @@ class DealersController < ApplicationController
   end
 
   def mail
-    if DealersMailer.contact_mail(@dealer, params.require(:mail)).deliver_now
-      flash.now[:notice] = 'Ваше повідомлення успішно відправлено'
-    else
-      flash.now[:error] = 'Помилка'
+    @param = params.require(:mail)
+    respond_to do |format|
+      if !(@param[:email].blank? ||  @param[:subject].blank? || @param[:name].blank? || @param[:phone].blank? || @param[:message].blank? )
+        DealersMailer.contact_mail(@dealer, @param).deliver_now
+        format.json { render json: { status: :true, message: 'Повідомлення успішно відпраавлено' } }
+      else
+        format.json { render json: { status: :false, message: 'Заповніть всі поля' }  }
+      end
     end
-    render :show
   end
 
   private

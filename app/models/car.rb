@@ -5,4 +5,8 @@ class Car < ActiveRecord::Base
 
   validates_attachment_content_type :prev_image, content_type: /\Aimage\/.*\Z/
   validates_presence_of :name, :description, :year
+
+  def slug
+    self.name.gsub( ' ', '_' )
+  end
 end

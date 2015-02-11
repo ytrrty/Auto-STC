@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   resources :feature_configurations
 
   post 'dealers/:id' => 'dealers#mail'
+  get 'configuration/:id' => 'configurations#load'
+  post 'configuration/:id' => 'configurations#load'
   post 'loadImgCar/:id' => 'main#loadImgCar'
   get 'load/:id' => 'main#load'
   get 'car/:name/:id' => 'cars#show'

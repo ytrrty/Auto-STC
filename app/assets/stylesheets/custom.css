@@ -250,3 +250,22 @@ div.alert-message a.close {
 div.alert-message a.close:hover, div.alert-box a.close:focus {
   opacity: 0.4;
 }
+
+.modal_load {
+  display:    none;
+  position:   fixed;
+  z-index:    10;
+  top:        0;
+  left:       0;
+  height:     100%;
+  width:      100%;
+  background: rgba( 0, 0, 0, .5 ) url('/images/ajax-loader.gif')  50% 50% no-repeat;
+}
+
+body.loading {
+  ovesrflow: hidden;
+}
+
+body.loading .modal_load {
+  display: block;
+}

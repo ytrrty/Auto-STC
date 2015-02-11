@@ -1,0 +1,24 @@
+<script>
+function loadDealersMap()
+{
+  $('#t_dealers').gMap(
+  {
+    markers: [
+    <% dealers.each do |dealer| %>
+    {
+      latitude: <%= dealer.map_x %>,
+      longitude: <%= dealer.map_y %>,
+      title: '<%= dealer.name %>',
+      html:"<strong><%= dealer.name %></strong><br><%= dealer.address %><br>Телефон: <%= dealer.phone %><br>Почта: <%= dealer.mail %><br><br><a href='/dealers/<%= dealer.id %>' class='btn btn_default'><span>Детальніше</span></a>",
+      popup: false,
+      icon: { image: 'http://billfoxusedcars.com/images/icons/gmap_icon.png',iconsize: [74, 88],iconanchor: [37,88],infowindowanchor: [0, 0] }
+    },
+    <% end %>
+    ],
+    zoom: 6,
+    scrollwheel: true,
+    latitude: 48.7359771,
+    longitude: 31.2602689
+  });
+}
+</script>

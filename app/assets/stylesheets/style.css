@@ -2956,7 +2956,7 @@ h3.toggle.box {
 
 .week_offer .offer_price {
 	color:#f25821;
-	font-size:17px;
+	font-size:14px;
 	font-weight:500;
 	position:absolute;
 	top:25px;
@@ -5220,7 +5220,7 @@ input.btn-submit,
 	position:relative;}
 
 .offer_details .offer_price strong {
-	font-size:29px;
+	font-size:26px;
 	color:#f1541e}
 
 .offer_details .offer_price em {

@@ -1,0 +1,37 @@
+<div class="styled_table table_blue">
+  <table style='border: 0;'>
+    <tbody>
+
+      <tr>
+        <td style='width: 100%;'>Витрати палива в змішаному режимі (л/100км)</td>
+        <td style='width: 100%;float:right;'><%= configuration.consumption_combo %></td>
+      </tr>
+
+      <tr class='odd'>
+        <td style='width: 100%;'>Витрати палива в міському режимі (л/100км)</td>
+        <td style='width: 100%;float:right;'><%= configuration.consumption_city %></td>
+      </tr>
+
+      <tr>
+        <td style='width: 100%;'>Витрати палива в заміському режимі (л/100км)</td>
+        <td style='width: 100%;float:right;'><%= configuration.consumption_suburb %></td>
+      </tr>
+
+      <tr class='odd'>
+        <td style='width: 100%;'>Колісна база</td>
+        <td style='width: 100%;float:right;'><%= configuration.wheelbase %></td>
+      </tr>
+
+      <tr>
+        <td style='width: 100%;'>Розгін до 100км/г</td>
+        <td style='width: 100%;float:right;'><%= configuration.speed_100 %></td>
+      </tr>
+
+      <tr class='odd'>
+        <td style='width: 100%;'>Максимальна швидкість</td>
+        <td style='width: 100%;float:right;'><%= configuration.max_speed %></td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>

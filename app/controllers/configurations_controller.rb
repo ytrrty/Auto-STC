@@ -11,12 +11,12 @@ class ConfigurationsController < ApplicationController
           {
             status: :true,
             configuration: @configuration,
-            colors: (render_to_string partial: @configuration.colors),
-            #dealers: (render_to_string '/dealers/dealers_configuraiton', dealers: @configuration.dealers),
             dealers: (render_to_string partial: "dealers/dealers_configuraiton", locals: { dealers: @configuration.dealers }),
-            features_s: (render_to_string partial: "features/features_s", locals: { features:   @configuration.feature_configurations.includes(:feature).where( features: {typec: 0}).all }),
-            features_t:  (render_to_string partial: "features/features_s", locals: { features:   @configuration.feature_configurations.includes(:feature).where( features: {typec: 1}).all }),
-
+            features_s: (render_to_string partial: "features/features_s", locals: { features: @configuration.feature_configurations.includes(:feature).where( features: {typec: 0}).all }),
+            features_t: (render_to_string partial: "features/features_s", locals: { features: @configuration.feature_configurations.includes(:feature).where( features: {typec: 1}).all }),
+            engine: (render_to_string partial: "features/engine", locals: { configuration: @configuration }),
+            dynamic: (render_to_string partial: "features/dynamic", locals: { configuration: @configuration }),
+            view: (render_to_string partial: "features/view", locals: { colors: @configuration.colors, features: @configuration.feature_configurations.includes(:feature).where( features: {typec: 2}).all }),
           }
         }
       end

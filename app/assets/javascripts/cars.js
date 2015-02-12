@@ -12,6 +12,9 @@ function loadConfiguration( id )
       $("#t_dealers").html(data.dealers);
       $("#t_features_s").html(data.features_s);
       $("#t_features_t").html(data.features_t);
+      $("#t_engine").html(data.engine);
+      $("#t_dynamic").html(data.dynamic);
+      $("#t_view").html(data.view);
       loadDealersMap();
     },
     error: function(data)

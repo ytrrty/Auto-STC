@@ -1,0 +1,37 @@
+<div class="styled_table table_blue">
+  <table style='border: 0;'>
+    <tbody>
+
+      <tr>
+        <td style='width: 100%;'>Кількість передач</td>
+        <td style='width: 100%;float:right;'><%= configuration.count_p %></td>
+      </tr>
+
+      <tr class='odd'>
+        <td style='width: 100%;'>Робочий об’єм двигуна</td>
+        <td style='width: 100%;float:right;'><%= configuration.volume_engine %></td>
+      </tr>
+
+      <tr>
+        <td style='width: 100%;'>Тип коробки передач</td>
+        <td style='width: 100%;float:right;'><%= configuration.getKPPName %></td>
+      </tr>
+
+      <tr class='odd'>
+        <td style='width: 100%;'>Кількість передач</td>
+        <td style='width: 100%;float:right;'><%= configuration.count_p %></td>
+      </tr>
+
+      <tr>
+        <td style='width: 100%;'>Паливо</td>
+        <td style='width: 100%;float:right;'><%= configuration.getFuelName %></td>
+      </tr>
+
+      <tr class='odd'>
+        <td style='width: 100%;'>Привід</td>
+        <td style='width: 100%;float:right;'><%= configuration.getGearName %></td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>

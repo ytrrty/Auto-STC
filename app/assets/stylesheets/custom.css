@@ -269,3 +269,16 @@ body.loading {
 body.loading .modal_load {
   display: block;
 }
+
+.feature_icon {
+  width: 23px;
+  height: 23px;
+}
+
+.feature_icon.yes {
+  background: url("/images/icons/icon_check2.png") no-repeat scroll 0px 1px transparent;
+}
+
+.feature_icon.no {
+  background: url("/images/icons/icon_x2.png") no-repeat scroll 0px 1px transparent;
+}

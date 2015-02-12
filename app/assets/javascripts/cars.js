@@ -10,6 +10,8 @@ function loadConfiguration( id )
     success: function(data)
     {
       $("#t_dealers").html(data.dealers);
+      $("#t_features_s").html(data.features_s);
+      $("#t_features_t").html(data.features_t);
       loadDealersMap();
     },
     error: function(data)
@@ -29,13 +31,10 @@ $(document).ready(function()
     e.preventDefault();
     $('.tabcontent').hide();
     $("#t_dealers").show();
-    if(true)
-    {
-      var gmap = $("#t_dealers").data("gmap");
-      var center = gmap.gmap.getCenter();
-      google.maps.event.trigger(gmap.gmap, "resize");
-      gmap.gmap.setCenter(center);
-    }
+    var gmap = $("#t_dealers").data("gmap");
+    var center = gmap.gmap.getCenter();
+    google.maps.event.trigger(gmap.gmap, "resize");
+    gmap.gmap.setCenter(center);
   }
 });
 });

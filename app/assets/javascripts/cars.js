@@ -16,7 +16,7 @@ function loadConfiguration( id )
     },
     error: function(data)
     {
-      $("#result").append( getErrorMessageBox( 'Виникла невідома помилка' ) );
+      $("#result").append( getMessageBox( 'Виникла невідома помилка', 'error' ) );
     }
   });
 }

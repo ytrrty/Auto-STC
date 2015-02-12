@@ -13,21 +13,8 @@ function hsModels()
   }
 }
 
-$(function(){
-  $(".alert-message").delegate("a.close", "click", function(event) {
-    event.preventDefault();
-    $(this).closest(".alert-message").fadeOut(function(event){
-      $(this).remove();
-    });
-  });
-});
-
-function getErrorMessageBox( message )
+function getMessageBox( message, type )
 {
-  return '<div class="alert-message error"><div class="box-icon"></div><p>'+message+'<a href="" class="close">&times;</a></div>';
-}
-
-function getSuccessMessageBox( message )
-{
-  return '<div class="alert-message success"><div class="box-icon"></div><p>'+message+'<a href="" class="close">&times;</a></div>';
+  var scriptCloseMessageBox = '<script>$(".notification-close").click(function(){$(".notification-box").fadeOut("slow");return false;});</script>';
+  return '<div class="notification-box notification-box-'+type+'"><p>'+message+'</p><a href="#" class="notification-close notification-close-'+type+'">x</a></div>' + scriptCloseMessageBox;
 }

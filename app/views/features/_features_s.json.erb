@@ -1,0 +1,12 @@
+<div class="styled_table table_blue">
+  <table style='border: 0;'>
+    <tbody>
+      <% features.each_with_index do |c_feature, i| %>
+        <tr<%= (( (i+1) % 2 == 0 ) ? ' class=odd' : '') %>>
+          <td style='width: 100%;'><%= c_feature.feature.name %></td>
+          <td style='width: 100%;float:right;'><div class="feature_icon <%= ( ( c_feature.status) ? 'yes' : 'no') %>"> </div></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

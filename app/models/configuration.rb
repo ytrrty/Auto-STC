@@ -1,6 +1,6 @@
 class Configuration < ActiveRecord::Base
   has_many :colors, dependent: :delete_all
-  
+
   has_many :dealer_cars, dependent: :delete_all
   has_many :dealers, through: :dealer_cars
 
@@ -19,4 +19,81 @@ class Configuration < ActiveRecord::Base
   validates :gear, presence: true, inclusion: { in: Configuration.gears.keys, message: "%{value} is not a valid gear" }
   validates :body, presence: true, inclusion: { in: Configuration.bodies.keys, message: "%{value} is not a valid body" }
   validates :kpp, presence: true, inclusion: { in: Configuration.kpps.keys, message: "%{value} is not a valid kpp" }
+
+  def getFuelName
+    case self.fuel
+      when 'petrol'
+        'Бензин'
+      when 'diesel'
+        'Дизель'
+      when 'gas'
+        'Газ'
+      when 'hybrid'
+        'Гибрид'
+      else
+        'Невідомо'
+    end
+  end
+
+  def getBodyName
+    case self.body
+      when 'sedan'
+        'Седан'
+      when 'universal'
+        'Універсал'
+      when 'hatchback'
+        'Хетчбек'
+      when 'coupe'
+        'Купе'
+      when 'limousine'
+        'Лимузин'
+      when 'minibus'
+        'Міні-бус'
+      when 'cabriolet'
+        'Кабріолет'
+      when 'van'
+        'Вантажна'
+      when 'pickup'
+        'Пікап'
+      when 'crossover'
+        'Кроссовер'
+      else
+        'Невідомо'
+    end
+  end
+
+  def getGearName
+    case self.gear
+      when 'front'
+        'Передній'
+      when 'back'
+        'Задній'
+      when 'full'
+        'Повний'
+      else
+        'Невідомо'
+    end
+  end
+
+  def getKPPName
+    case self.kpp
+      when 'mechanical'
+         'Механічна'
+      when 'automatic'
+         'Автоматична'
+      when 'robotised'
+        'Роботизована'
+      when 'variator'
+        'Варіатор'
+      when 'tiptronic'
+        'Тріптонік'
+      else
+         'Невідома'
+    end
+  end
+
+  def getFormatVolumeEngine
+    '%.1f' % (self.volume_engine/1000.0)
+  end
+
 end

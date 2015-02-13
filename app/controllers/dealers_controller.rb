@@ -15,7 +15,7 @@ class DealersController < ApplicationController
     respond_to do |format|
       if !(@param[:email].blank? ||  @param[:subject].blank? || @param[:name].blank? || @param[:phone].blank? || @param[:message].blank? )
         DealersMailer.contact_mail(@dealer, @param).deliver_now
-        format.json { render json: { status: :true, message: 'Повідомлення успішно відпраавлено' } }
+        format.json { render json: { status: :true, message: 'Повідомлення успішно відправлено' } }
       else
         format.json { render json: { status: :false, message: 'Заповніть всі поля' }  }
       end

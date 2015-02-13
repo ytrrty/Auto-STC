@@ -5,19 +5,21 @@ function sendMail()
   $.ajax(
   {
     type: "POST",
-    dataType: "json",
+    //dataType: "json",
     url: form.attr('action'),
     data: valuesToSubmit,
     success: function(data)
     {
+      $("#result").empty();
       if( data.status == 'true')
-        $("#result").append( getSuccessMessageBox(data.message) );
+        $("#result").append( getMessageBox(data.message, 'success') );
       else
-        $("#result").append( getErrorMessageBox(data.message) );
+        $("#result").append( getMessageBox(data.message, 'error') );
     },
     error: function(data)
     {
-      $("#result").append( getErrorMessageBox( 'Виникла невідома помилка' ) );
+      $("#result").empty();
+      $("#result").append( getMessageBox( 'Виникла невідома помилка', 'error' ) );
     }
   });
 }

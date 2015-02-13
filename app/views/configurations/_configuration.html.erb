@@ -1,0 +1,8 @@
+<div class="special_item" style='height: 110px;'>
+  <div class="special_text" style='width: 304px; height: 90px;'>
+    <h3><a style="outline: medium none;" hidefocus="true" onClick='loadConfiguration(<%= configuration.id %>)' href="#loadConfiguration"><%= configuration.name %></a></h3>
+    <div class="info_row"><span>Двигун:</span> <%= configuration.getFuelName %> <%= configuration.getFormatVolumeEngine %></div>
+    <div class="info_row"><span>Коробка передач:</span> <%= configuration.getKPPName %> (<%= configuration.count_p %>)</div>
+    <div class="special_price"><%= configuration.price %> грн.</div>
+  </div>
+</div>

@@ -20,29 +20,13 @@
         <div class="offer_gallery" style='width: 580px;'>
           <div class="gallery_images" style='width: 580px;'>
             <div id="gallery_images">
-              <div class="gallery_image_item" style='width: 580px;'>
-                <img src="http://img3.avtolog.com/blog/g/nissan-micra.131691619993.jpg" alt="">
-                <a href="http://img3.avtolog.com/blog/g/nissan-micra.131691619993.jpg" data-rel="prettyPhoto[gal]">
-                  <span style='width: 580px;'>Exterior view - 20” rims and inteligent headlights <em class="ico_large"></em></span></a>
-                </div>
-                <div class="gallery_image_item" style='width: 580px;'>
-                  <img src="http://img3.avtolog.com/blog/g/nissan-micra.131691619993.jpg" alt="">
-                  <a href="http://img3.avtolog.com/blog/g/nissan-micra.131691619993.jpg" data-rel="prettyPhoto[gal]">
-                    <span style='width: 580px;'>7G-Tronic Plus seven-speed automatic transmission <em class="ico_large"></em></span></a>
-                  </div>
-                  <div class="gallery_image_item" style='width: 580px;'>
-                    <img src="http://img3.avtolog.com/blog/g/nissan-micra.131691619993.jpg" alt="">
-                    <a href="http://img3.avtolog.com/blog/g/nissan-micra.131691619993.jpg" data-rel="prettyPhoto[gal]"></a> <!-- example without caption -->
-                  </div>
-
-                </div>
+              <%= render partial: "slider_big", locals: {photos: @car.photos} %>
               </div>
+            </div>
 
               <div class="gallery_thumbs">
                 <div id="gallery_thumbs">
-                  <a href="#"><img src="http://img3.avtolog.com/blog/g/nissan-micra.131691619993.jpg" alt=""></a>
-                  <a href="#"><img src="http://img3.avtolog.com/blog/g/nissan-micra.131691619993.jpg" alt=""></a>
-                  <a href="#"><img src="http://img3.avtolog.com/blog/g/nissan-micra.131691619993.jpg" alt=""></a>
+                  <%= render partial: "slider_small", locals: {photos: @car.photos} %>
                 </div>
                 <a href="#" class="prev" id="gallery_thumbs_prev"></a>
                 <a href="#" class="next" id="gallery_thumbs_next"></a>

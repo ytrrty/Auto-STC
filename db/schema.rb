@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150203090949) do
+ActiveRecord::Schema.define(version: 20150213082031) do
 
   create_table "cars", force: :cascade do |t|
     t.string   "name",                    limit: 255,   null: false
@@ -99,8 +99,21 @@ ActiveRecord::Schema.define(version: 20150203090949) do
     t.string   "name",       limit: 255, null: false
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
-    t.integer  "typec",       limit: 4,   null: false
+    t.integer  "typec",      limit: 4,   null: false
   end
+
+  create_table "photos", force: :cascade do |t|
+    t.integer  "car_id",            limit: 4,   null: false
+    t.string   "file_file_name",    limit: 255, null: false
+    t.string   "file_content_type", limit: 255, null: false
+    t.integer  "file_file_size",    limit: 4,   null: false
+    t.datetime "file_updated_at",               null: false
+    t.string   "name",              limit: 255, null: false
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+  end
+
+  add_index "photos", ["car_id"], name: "index_photos_on_car_id", using: :btree
 
   add_foreign_key "colors", "configurations"
   add_foreign_key "configurations", "cars"
@@ -108,4 +121,5 @@ ActiveRecord::Schema.define(version: 20150203090949) do
   add_foreign_key "dealer_cars", "dealers"
   add_foreign_key "feature_configurations", "configurations"
   add_foreign_key "feature_configurations", "features"
+  add_foreign_key "photos", "cars"
 end

@@ -11,7 +11,7 @@ class MainController < ApplicationController
 
   def loadImgCar
     if @car.update(car_params)
-      redirect_to :action => "index"
+      redirect_to action: :index
     else
       @message = "Error"
     end
